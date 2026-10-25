@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Local workspace attachments
+uploads/
+.cache/
+*.zip
