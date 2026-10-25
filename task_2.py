@@ -21,7 +21,7 @@
 
 import asyncio
 import time
-import requests
+
 import httpx
 
 # 20 разных картинок (у каждой свой номер в адресе) -- ответы достаточно
@@ -61,7 +61,7 @@ async def robust_fetch(
             resp = await client.get(url, timeout=timeout)
             resp.raise_for_status()
             return resp.status_code
-        except (httpx.HTTPError, asyncio.TimeoutError) as exc:
+        except (TimeoutError, httpx.HTTPError) as exc:
             last_error = exc
             backoff = 2 ** attempt  # 1 с -> 2 с -> 4 с
             if attempt < max_attempts - 1:

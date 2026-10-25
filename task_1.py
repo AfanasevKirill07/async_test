@@ -14,8 +14,9 @@
 
 import asyncio
 import time
-import requests
+
 import httpx
+import requests
 
 # 20 разных картинок (у каждой свой номер в адресе) -- ответы достаточно
 # «тяжёлые», чтобы разница между sync и async была хорошо видна

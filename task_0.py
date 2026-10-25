@@ -27,7 +27,7 @@
 
 import asyncio
 import time
-import requests
+
 import httpx
 
 # 20 разных картинок (у каждой свой номер в адресе) -- ответы достаточно

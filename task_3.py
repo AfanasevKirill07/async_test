@@ -27,10 +27,10 @@
 """
 
 import asyncio
-from concurrent.futures import ProcessPoolExecutor
 import hashlib
 import time
-import requests
+from concurrent.futures import ProcessPoolExecutor
+
 import httpx
 
 # 20 разных картинок (у каждой свой номер в адресе) -- ответы достаточно
